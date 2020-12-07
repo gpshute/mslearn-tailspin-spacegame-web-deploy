@@ -150,7 +150,7 @@ stages:
             artifact: dropDacpac
             patterns: '**/*'
           - task: SqlAzureDacpacDeployment@1
-            displayName: 'Deploy SQL schema'
+            displayName: 'Deploy SQL schema FIX'
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               authenticationType: 'server'
