@@ -6,7 +6,7 @@ variables:
 
 stages:
 - stage: 'Build'
-  displayName: 'Build the web application'
+  displayName: 'Build the web application FORCE CHANGE'
   jobs: 
   - job: 'Build'
     displayName: 'Build job'
@@ -150,7 +150,7 @@ stages:
             artifact: dropDacpac
             patterns: '**/*'
           - task: SqlAzureDacpacDeployment@1
-            displayName: 'Deploy SQL schema FIX'
+            displayName: 'Deploy SQL schema'
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               authenticationType: 'server'
